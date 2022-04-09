@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,  // https://chuckwebtips.hatenablog.com/entry/2016/03/02/000000
+    "outDir": "./dist",
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src"
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules"]
+}
