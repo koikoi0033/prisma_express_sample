@@ -13,7 +13,8 @@
     "lint:prettier": "prettier --check .",
     "fix": "run-s -l -c fix:eslint fix:prettier",
     "fix:eslint": "eslint --fix src/**/*.ts",
-    "fix:prettier": "prettier --write ."
+    "fix:prettier": "prettier --write .",
+    "test": "NODE_ENV=test jest",
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
